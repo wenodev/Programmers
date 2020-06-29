@@ -4,6 +4,8 @@ import java.util.List;
 
 public class 모의고사 {
 
+    //git test 0629
+
     public static void main(String[] args) {
         int[] answers = {1,5,1};
         Solution(answers);
