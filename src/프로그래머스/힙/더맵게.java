@@ -12,7 +12,9 @@ public class 더맵게 {
     public static int Solution(int[] scoville, int K) {
         int answer = 0;
 
+        for(int i=0; i<scoville.length; i++){
 
+        }
 
 
 
