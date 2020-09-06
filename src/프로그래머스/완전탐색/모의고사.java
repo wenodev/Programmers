@@ -40,11 +40,6 @@ public class 모의고사 {
             }
         }
 
-        if (count[0] < count[1]){
-            answerList.add(2);
-        }else if(count[0] > count[1]){
-            answerList.add(1);
-        }
 
     }
 }
