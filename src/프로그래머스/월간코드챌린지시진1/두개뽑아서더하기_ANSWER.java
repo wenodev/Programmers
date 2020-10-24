@@ -20,6 +20,7 @@ public class 두개뽑아서더하기_ANSWER {
 
         //꼭 기억하기!!!
         answer = integerSet.stream().sorted().mapToInt(Integer::intValue).toArray();
+        
 
 
     }
