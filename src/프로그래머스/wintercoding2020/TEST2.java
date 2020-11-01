@@ -74,8 +74,6 @@ public class TEST2 {
         }
 
         answer = String.valueOf(chars);
-        System.out.println(answer);
-
 
     }
 
