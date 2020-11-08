@@ -5,15 +5,11 @@ public class TEST {
 
     public static void main(String[] args) {
 
-        String[] arr1 = {"aaa", "bbb", "ccc", "aaa"};
+        String[] arr = {"abc" , "abc"};
 
-        Map<String, Integer> map = new HashMap<>();
+        System.out.println(arr[0].indexOf(arr[1]));
 
-        for (String a : arr1){
-            map.put(a, map.getOrDefault(a, 0) + 2);
-        }
 
-        System.out.println(map);
 
 
     }
