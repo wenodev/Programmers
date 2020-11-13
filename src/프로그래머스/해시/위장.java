@@ -20,6 +20,7 @@ public class 위장 {
             }
         }
 
+        //keySet 사용
         for (String key : map.keySet()){
             answer *= map.get(key) + 1;
         }
