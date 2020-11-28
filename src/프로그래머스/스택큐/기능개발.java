@@ -9,21 +9,36 @@ public class 기능개발 {
 
     public static int[] solution(int[] progresses, int[] speeds){
 
-        ArrayList<Integer> list = new ArrayList<>();
+//        ArrayList<Integer> list = new ArrayList<>();
+//
+//        int temp = 0;
+//        for (int i = 0; i < progresses.length; i++) {
+//            int current = (100 - progresses[i]) / speeds[i];
+//            if (temp < current) {
+//                temp = current;
+//                list.add(1);
+//            } else list.set(list.size() - 1, list.get(list.size() - 1) + 1);
+//        }
+//
+//        System.out.println(list);
+//
+//        return list.stream().mapToInt(Integer::intValue).toArray();
 
-        int temp = 0;
+        List<Integer> answerList = new ArrayList<>();
+
+        int max = 0;
         for (int i = 0; i < progresses.length; i++) {
-            int current = (100 - progresses[i]) / speeds[i];
-            if (temp < current) {
-                temp = current;
-                list.add(1);
-            } else list.set(list.size() - 1, list.get(list.size() - 1) + 1);
+            int current = (100 - progresses[i] / speeds[i]);
+            if (max < current){
+                max = current;
+                answerList.add(1);
+            }else{
+                answerList.set(answerList.size()-1, answerList.get(answerList.size()-1) + 1);
+            }
+
         }
 
-        System.out.println(list);
-
-        return new int[5];
-
+        return answerList.stream().mapToInt(Integer::intValue).toArray();
 
 
     }
