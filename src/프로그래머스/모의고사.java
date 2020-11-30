@@ -44,6 +44,9 @@ public class 모의고사 {
         }
 
 
+        // List to Array 스트림으로
+//        list.stream().mapToInt(i->i.intValue()).toArray();
+
         return answer;
     }
 
