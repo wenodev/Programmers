@@ -21,6 +21,8 @@ public class 타겟넘버 {
          * 다음 depth의 노드를 셋팅 한다.
          * 현재 노드가 leaf 노드면 다음 노드를 셋팅 한다.
          */
+
+
         public void setNode(Node node,int val)
         {
             if(!node.isTerminal())
@@ -41,7 +43,6 @@ public class 타겟넘버 {
         }
         public int countValue(Node node,int value)
         {
-            int cnt =0;
 
             if(!node.isTerminal())
             {
