@@ -4,27 +4,13 @@ public class 시저암호 {
 
     public static String solution(String s, int n) {
         String answer = "";
-        int temp;
-        int sum;
         char[] arrChar = new char[s.length()];
 
         for (int i = 0; i < s.length(); i++) {
-            temp = s.charAt(i);
-
-            if (temp>= 97 && temp <= 122){
-                sum = temp + n;
-                if (sum >= 123){
-                    arrChar[i] = (char) (sum - 122 + 96);
-                }else{
-                    arrChar[i] = (char) sum;
-                }
-            }else if(temp>= 65 && temp <= 90){
-                sum = temp + n;
-                if (sum >= 91){
-                    arrChar[i] = (char) (sum - 90 + 64);
-                }else{
-                    arrChar[i] = (char) sum;
-                }
+            if (Character.isLowerCase(s.charAt(i))){
+                arrChar[i] = (char) ((s.charAt(i) - 'a' + n) % 26 + 'a');
+            }else if(Character.isUpperCase(s.charAt(i))){
+                arrChar[i] = (char) ((s.charAt(i) - 'A' + n) % 26 + 'A');
             }else{
                 arrChar[i] = s.charAt(i);
             }
